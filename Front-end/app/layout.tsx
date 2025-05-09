@@ -4,7 +4,7 @@ import "./globals.css";
 
 const afacad = Afacad({
   variable: "--font-afacad",
-  subsets: ["latin"],
+  subsets: ["all"],
 });
 
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${afacad.variable} antialiased`}
+        className={`${afacad.variable}`}
       >
         {children}
       </body>
