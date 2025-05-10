@@ -51,10 +51,10 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden sm:flex gap-12 text-white font-light text-md">
-            <Link href="/Home">Home</Link>
-            <Link href="/HowItWorks">How it works</Link>
-            <Link href="/Services">Services</Link>
-            <Link href="/Contact">Contact Us</Link>
+            <Link href="#home">Home</Link>
+            <Link href="#how-it-works">How it works</Link>
+            <Link href="#services">Services</Link>
+            <Link href="#contact">Contact Us</Link>
           </div>
           <div className="hidden sm:flex gap-6 text-white font-extralight">
             <Link className="bg-[#0061FE] px-2 rounded-full" href="/Login">
@@ -63,23 +63,23 @@ export default function Home() {
             <Link className="bg-[#E31937] px-2 rounded-full" href="/Register">
               Register
             </Link>
-            <Link className="bg-[#0061FE] px-2 rounded-full" href="/Contact">
+            <Link className="bg-[#0061FE] px-2 rounded-full" href="#contact">
               Contact
             </Link>
           </div>
         </div>
         {menuOpen && (
           <div className="sm:hidden absolute top-16 left-0 w-full z-50 bg-black/60 text-white px-6 py-4 flex flex-col gap-4">
-            <Link href="/Home" onClick={() => setMenuOpen(false)}>
+            <Link href="#home" onClick={() => setMenuOpen(false)}>
               Home
             </Link>
-            <Link href="/HowItWorks" onClick={() => setMenuOpen(false)}>
+            <Link href="#how-it-works" onClick={() => setMenuOpen(false)}>
               How it works
             </Link>
-            <Link href="/Services" onClick={() => setMenuOpen(false)}>
+            <Link href="#services" onClick={() => setMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/Contact" onClick={() => setMenuOpen(false)}>
+            <Link href="#contact" onClick={() => setMenuOpen(false)}>
               Contact Us
             </Link>
             <Link
@@ -105,7 +105,7 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-20 sm:mt-60 sm:ml-20 ml-3">
+        <div id="home" className="mt-20 sm:mt-60 sm:ml-20 ml-3">
           <div className="text-6xl sm:text-5xl md:text-8xl font-extrabold">
             <h1 className="text-[#0097ff] font-bold text-3xl">
               Ja<span className="text-[#E31937]">Gedo</span>
@@ -177,7 +177,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full ">
+      <div
+        id="how-it-works"
+        className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full "
+      >
         <div className="mx-20">
           <h1 className="text-[#E31937] font-bold text-4xl sm:text-5xl md:text-6xl mb-8">
             How It <span className="text-[#0097ff]">Works</span>
@@ -248,7 +251,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full py-10">
+      <div
+        id="services"
+        className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full py-10"
+      >
         <div className="mx-5 sm:mx-20">
           <h1 className="text-[#E31937] font-bold text-4xl sm:text-6xl mb-10">
             Services
@@ -261,22 +267,24 @@ export default function Home() {
                 className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[340px] h-[500px]"
                 style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
               >
+                <img src="/digital.png" alt="" />
                 <h3
-                  className="text-black text-2xl font-extrabold"
+                  className="text-black text-7xl mt-10 font-extrabold"
                   style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                 >
                   Digital & Creative Services
                 </h3>
               </div>
               <div
-                className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[340px] h-[340px]"
+                className="bg-[#E31937] p-6 rounded-2xl w-full sm:w-[340px] h-[340px]"
                 style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
               >
+                <img src="/Mechanical.png" alt="" />
                 <h3
-                  className="text-black text-2xl font-extrabold"
+                  className="text-black text-5xl mt-5 font-extrabold"
                   style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                 >
-                  IT Solutions & Support
+                  Mechanical, Electrical & Plumbing (MEP) Services
                 </h3>
               </div>
             </div>
@@ -285,22 +293,24 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               <div className="flex flex-wrap gap-6 justify-center">
                 <div
-                  className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[480px] h-[350px]"
+                  className="bg-[#C026D3] p-6 rounded-2xl w-full sm:w-[480px] h-[350px]"
                   style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
                 >
+                  <img src="interior.png" alt="" />
                   <h3
-                    className="text-black text-2xl font-extrabold"
+                    className="text-black text-7xl mt-4 font-extrabold"
                     style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                   >
                     Painting & Interior Design
                   </h3>
                 </div>
                 <div
-                  className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[480px] h-[350px]"
+                  className="bg-[#0EA5E9] p-6 rounded-2xl w-full sm:w-[480px] h-[350px]"
                   style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
                 >
+                  <img src="/Logistics.png" alt="" />
                   <h3
-                    className="text-black text-2xl font-extrabold"
+                    className="text-black text-6xl mt-5 font-extrabold"
                     style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                   >
                     Logistics & Material Supply
@@ -312,11 +322,12 @@ export default function Home() {
                 className="bg-[#F7C300] p-6 rounded-2xl w-full sm:w-[980px] h-[500px]"
                 style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
               >
+                <img src="/construction.png" alt="" className="h-[370px]" />
                 <h3
-                  className="text-black text-2xl font-extrabold"
+                  className="text-black text-7xl font-extrabold"
                   style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                 >
-                  Architecture & Planning
+                  Construction & Building Services
                 </h3>
               </div>
             </div>
@@ -324,31 +335,149 @@ export default function Home() {
             {/* Right Column */}
             <div className="flex flex-col gap-6">
               <div
-                className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[340px] h-[350px]"
+                className="bg-[#F59E0B] p-6 rounded-2xl w-full sm:w-[340px] h-[350px]"
                 style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
               >
+                <img src="/home.png" alt="" />
                 <h3
-                  className="text-black text-2xl font-extrabold"
+                  className="text-black text-4xl font-extrabold"
                   style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                 >
-                  Consulting & Strategy
+                  Home Maintenance & Repairs
                 </h3>
               </div>
               <div
-                className="bg-[#0097FF] p-6 rounded-2xl w-full sm:w-[340px] h-[500px]"
+                className="bg-[#DB2777] p-6 rounded-2xl w-full sm:w-[340px] h-[500px]"
                 style={{ boxShadow: "-5px 5px 4px rgba(0, 0, 0, 0.5)" }}
               >
+                <img src="/capentry.png" alt="" />
                 <h3
-                  className="text-black text-2xl font-extrabold"
+                  className="text-black text-6xl font-extrabold"
                   style={{ textShadow: "-5px 4px 3px rgba(0, 0, 0, 0.5)" }}
                 >
-                  Engineering & Survey
+                  Carpentry & Woodwork
                 </h3>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div
+  id="contact"
+  className="bg-[url('/jagedoback2.png')] text-[#E31937] bg-cover bg-no-repeat min-h-full px-4 sm:px-10 md:px-20 py-10"
+>
+  <div className="mb-10">
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">Contact Us</h1>
+    <p className="text-xl sm:text-2xl md:text-4xl">Phone: +254 768 647 160</p>
+    <p className="text-xl sm:text-2xl md:text-4xl">Email: info@jagedo.co.ke</p>
+  </div>
+
+  <div className="flex flex-col lg:flex-row gap-8">
+    {/* Message Form */}
+    <div className="flex flex-col justify-evenly rounded-2xl p-4 text-white bg-[#0097ff] w-full lg:w-1/2 h-auto">
+      <p className="text-xl sm:text-2xl text-[#003B63] md:text-3xl mb-4">
+        Any Burning Question? Send Us a Message
+      </p>
+      <input
+        type="text"
+        placeholder="Name"
+        className="placeholder:text-lg sm:placeholder:text-xl py-2 px-3 mb-3 rounded-lg placeholder:text-white bg-[#003B63]"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        className="placeholder:text-lg sm:placeholder:text-xl py-2 px-3 mb-3 rounded-lg placeholder:text-white bg-[#003B63]"
+      />
+      <textarea
+        placeholder="Message"
+        className="placeholder:text-lg sm:placeholder:text-xl py-2 px-3 mb-3 rounded-lg h-24 sm:h-32 bg-[#003B63] placeholder:text-white resize-none"
+      />
+    </div>
+
+    {/* Newsletter */}
+    <div className="flex flex-col justify-center items-center bg-black/10 rounded-2xl w-full lg:w-1/2 h-[300px] p-4">
+      <p className="text-2xl sm:text-3xl md:text-5xl text-center mb-4">
+        Join Our Newsletter
+      </p>
+      <button
+        type="submit"
+        className="text-xl sm:text-2xl bg-gradient-to-r from-[#0097ff] to-[#E31937] text-white px-6 py-2 rounded-full"
+      >
+        Subscribe Now
+      </button>
+    </div>
+  </div>
+</div>
+
+      <footer className="bg-black text-white py-10 px-5 sm:px-20">
+        <div className="flex flex-col sm:flex-row justify-between gap-10">
+          {/* Brand */}
+          <div className="flex flex-col">
+            <h2 className="text-3xl font-bold text-[#0097ff]">
+              Ja<span className="text-[#E31937]">Gedo</span>
+            </h2>
+            <p className="mt-2 text-sm max-w-xs">
+              Turning In Mind Blueprints into Real Empires. Trusted platform for
+              all your construction and professional needs.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex flex-col">
+            <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+            <ul className="flex flex-col gap-1 text-sm">
+              <li>
+                <a href="#home" className="hover:text-[#0097ff]">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#how-it-works" className="hover:text-[#0097ff]">
+                  How it works
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-[#0097ff]">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-[#0097ff]">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="flex flex-col">
+            <h3 className="text-lg font-semibold mb-2">Contact</h3>
+            <p className="text-sm">Email: support@jagedo.com</p>
+            <p className="text-sm">Phone: +254 712 345 678</p>
+            <p className="text-sm">Location: Nairobi, Kenya</p>
+          </div>
+
+          {/* Socials (you can link these to real icons later) */}
+          <div className="flex flex-col">
+            <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+            <div className="flex gap-4 mt-1">
+              <a href="#" className="hover:text-[#0097ff]">
+                Facebook
+              </a>
+              <a href="#" className="hover:text-[#0097ff]">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-[#0097ff]">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 mt-8 pt-4 text-center text-sm text-white/60">
+          © {new Date().getFullYear()} JaGedo. All rights reserved.
+        </div>
+      </footer>
     </main>
   );
 }
