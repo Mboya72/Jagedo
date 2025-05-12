@@ -51,7 +51,7 @@ export default function Home() {
             </button>
           </div>
           <div className="hidden sm:flex gap-12 text-white font-light text-md">
-            <Link href="#home">Home</Link>
+            <Link href="#">Home</Link>
             <Link href="#how-it-works">How it works</Link>
             <Link href="#services">Services</Link>
             <Link href="#contact">Contact Us</Link>
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         {menuOpen && (
           <div className="sm:hidden absolute top-16 left-0 w-full z-50 bg-black/60 text-white px-6 py-4 flex flex-col gap-4">
-            <Link href="#home" onClick={() => setMenuOpen(false)}>
+            <Link href="#" onClick={() => setMenuOpen(false)}>
               Home
             </Link>
             <Link href="#how-it-works" onClick={() => setMenuOpen(false)}>
