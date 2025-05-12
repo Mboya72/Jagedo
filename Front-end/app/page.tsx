@@ -60,8 +60,8 @@ export default function Home() {
             <Link className="bg-[#0061FE] px-2 rounded-full" href="/Login">
               Login
             </Link>
-            <Link className="bg-[#E31937] px-2 rounded-full" href="/Register">
-              Register
+            <Link className="bg-[#E31937] px-2 rounded-full" href="/Signup">
+              Sign up
             </Link>
             <Link className="bg-[#0061FE] px-2 rounded-full" href="#contact">
               Contact
@@ -91,10 +91,10 @@ export default function Home() {
             </Link>
             <Link
               className="bg-[#E31937] px-2 rounded-full"
-              href="/Register"
+              href="/Signup"
               onClick={() => setMenuOpen(false)}
             >
-              Register
+              Sign up
             </Link>
             <Link
               className="bg-[#0061FE] px-2 rounded-full"

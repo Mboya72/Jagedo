@@ -6,6 +6,7 @@ export default function Login() {
     <div className="min-h-screen bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat flex items-center justify-center px-4">
       <div className="flex flex-row bg-black/20 bg-gradient-to-r border-2 border-[#003B63] from-[#0097ff]/60 to-[#E31937]/50 px-40 py-20 rounded-2xl w-full h-[95vh] max-w-[95vw] shadow-lg">
         <div className="w-[900px]">
+          <img src="/jagedologo.png" alt="" />
         <h1 className="text-5xl font-semibold text-[#003B63] mb-1 mt-[20%] underline decoration-dotted decoration-3 decoration-[#003B63]">
   Login
 </h1>
