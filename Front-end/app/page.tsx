@@ -16,9 +16,7 @@ export default function Home() {
       <div className="bg-[url('/jagedoback.png')] bg-cover bg-no-repeat min-h-screen pb-3">
         <div className="flex items-center justify-between bg-white/10 backdrop-blur-[70px] h-16 px-6 sm:px-20">
           <div className="text-[#0097ff] font-bold text-2xl">
-            <h1>
-              Ja<span className="text-[#E31937]">Gedo</span>
-            </h1>
+            <img src="/jagedob.png" alt="" />
           </div>
           <div className="sm:hidden">
             <button
@@ -413,9 +411,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row justify-between gap-10">
           {/* Brand */}
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold text-[#0097ff]">
-              Ja<span className="text-[#E31937]">Gedo</span>
-            </h2>
+           <img src="/jagedob.png" alt="" width={70} />
             <p className="mt-2 text-sm max-w-xs">
               Turning In Mind Blueprints into Real Empires. Trusted platform for
               all your construction and professional needs.
