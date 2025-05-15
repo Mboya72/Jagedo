@@ -16,7 +16,7 @@ export default function Home() {
       <div className="bg-[url('/jagedoback.png')] bg-cover bg-no-repeat min-h-screen pb-3">
         <div className="flex items-center justify-between bg-white/10 backdrop-blur-[70px] h-16 px-6 sm:px-20">
           <div className="text-[#0097ff] font-bold text-2xl">
-            <img src="/jagedob.png" alt="" />
+            <img src="/jagedologoo.png" alt="" />
           </div>
           <div className="sm:hidden">
             <button
@@ -54,14 +54,14 @@ export default function Home() {
             <Link href="#services">Services</Link>
             <Link href="#contact">Contact Us</Link>
           </div>
-          <div className="hidden sm:flex gap-6 text-white font-extralight">
-            <Link className="bg-[#0061FE] px-2 rounded-full" href="/Login">
+          <div className="hidden sm:flex gap-6 text-[#CCE9E4] font-extralight">
+            <Link className="bg-[#0097ff] p-2 text-xl " href="/Login">
               Login
             </Link>
-            <Link className="bg-[#E31937] px-2 rounded-full" href="/Signup">
+            <Link className="bg-[#88DA27] text-[#141717] p-2 text-xl " href="/Signup">
               Sign up
             </Link>
-            <Link className="bg-[#0061FE] px-2 rounded-full" href="#contact">
+            <Link className="bg-[#0097ff] p-2 text-xl " href="#contact">
               Contact
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
               Login
             </Link>
             <Link
-              className="bg-[#E31937] px-2 rounded-full"
+              className="bg-[#88DA27] px-2 rounded-full"
               href="/Signup"
               onClick={() => setMenuOpen(false)}
             >
@@ -106,7 +106,7 @@ export default function Home() {
         <div id="home" className="mt-20 sm:mt-60 sm:ml-20 ml-3">
           <div className="text-6xl sm:text-5xl md:text-8xl font-extrabold">
             <h1 className="text-[#0097ff] font-bold text-3xl">
-              Ja<span className="text-[#E31937]">Gedo</span>
+              Ja<span className="text-[#88DA27]">Gedo</span>
             </h1>
             <h2>
               Turning In Mind <span className="text-[#0097ff]">Blue</span>prints
@@ -146,28 +146,28 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row mt-16 items-center sm:items-start justify-between pr-20 gap-y-8">
             <div className=" flex flex-col sm:mb-3 mb:3 rounded-2xl w-[150px] items-center justify-center text-[#003b63] bg-[#E5F1ED]">
               <img src="/project.png" alt="projects" width={78} height={78} />
-              <h2 className={`${digital.className} text-4xl text-[#E31937]`}>
+              <h2 className={`${digital.className} text-4xl text-[#2C460C]`}>
                 10K+
               </h2>
               <h3 className="text-xl font-bold">Total Projects</h3>
             </div>
             <div className=" flex flex-col rounded-2xl w-[150px] items-center justify-center text-[#003b63] bg-[#E5F1ED]">
               <img src="/project.png" alt="projects" width={78} height={78} />
-              <h2 className={`${digital.className} text-4xl text-[#E31937]`}>
+              <h2 className={`${digital.className} text-4xl text-[#2C460C]`}>
                 400+
               </h2>
               <h3 className="text-xl font-bold">Team Support</h3>
             </div>
             <div className=" flex flex-col rounded-2xl w-[150px] items-center justify-center text-[#003b63] bg-[#E5F1ED]">
               <img src="/project.png" alt="projects" width={78} height={78} />
-              <h2 className={`${digital.className} text-4xl text-[#E31937]`}>
+              <h2 className={`${digital.className} text-4xl text-[#2C460C]`}>
                 9.5K+
               </h2>
               <h3 className="text-xl font-bold">Happy Clients</h3>
             </div>
             <div className=" flex flex-col rounded-2xl w-[150px] items-center justify-center text-[#003b63] bg-[#E5F1ED]">
               <img src="/project.png" alt="projects" width={78} height={78} />
-              <h2 className={`${digital.className} text-4xl text-[#E31937]`}>
+              <h2 className={`${digital.className} text-4xl text-[#2C460C]`}>
                 2K+
               </h2>
               <h3 className="text-xl font-bold">Awarded</h3>
@@ -179,12 +179,12 @@ export default function Home() {
         id="how-it-works"
         className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full "
       >
-        <div className="mx-20">
-          <h1 className="text-[#E31937] font-bold text-4xl sm:text-5xl md:text-6xl mb-8">
+        <div className="pt-4 mx-20">
+          <h1 className="text-[#88DA27] rounded-sm pl-1 bg-black/50 w-[320px] font-bold text-4xl sm:text-5xl md:text-6xl mb-8">
             How It <span className="text-[#0097ff]">Works</span>
           </h1>
           <div>
-            <h2 className="text-3xl text-[#E31937]  font-bold mb-4 sm:mb-0">
+            <h2 className="text-3xl rounded-sm pl-1 bg-black/50 w-[180px] text-[#88DA27]  font-bold mb-4 sm:mb-0">
               For Customers
             </h2>
             <div className="flex flex-wrap flex-col sm:flex-row gap-6 items-center justify-center">
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl text-[#0097ff]  font-bold mb-4 sm:mb-0">
+            <h2 className="text-3xl rounded-sm pl-1 bg-black/50 w-[150px] text-[#0EA5E9]  font-bold mb-4 sm:mb-0">
               For Builders
             </h2>
             <div className="flex flex-wrap flex-col sm:flex-row gap-6 items-center justify-center">
@@ -254,7 +254,7 @@ export default function Home() {
         className="bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat min-h-full py-10"
       >
         <div className="mx-5 sm:mx-20">
-          <h1 className="text-[#E31937] font-bold text-4xl sm:text-6xl mb-10">
+          <h1 className="text-[#88DA27] rounded-sm pl-1 bg-black/50 w-[200px] font-bold text-4xl sm:text-6xl mb-10">
             Services
           </h1>
 
@@ -362,7 +362,7 @@ export default function Home() {
       </div>
       <div
   id="contact"
-  className="bg-[url('/jagedoback2.png')] text-[#E31937] bg-cover bg-no-repeat min-h-full px-4 sm:px-10 md:px-20 py-10"
+  className="bg-[url('/jagedoback2.png')] text-[#0097ff] bg-cover bg-no-repeat min-h-full px-4 sm:px-10 md:px-20 py-10"
 >
   <div className="mb-10">
     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">Contact Us</h1>
@@ -390,6 +390,7 @@ export default function Home() {
         placeholder="Message"
         className="placeholder:text-lg sm:placeholder:text-xl py-2 px-3 mb-3 rounded-lg h-24 sm:h-32 bg-[#003B63] placeholder:text-white resize-none"
       />
+      <button className="bg-[#88DA27] p-2 text-black rounded-md">Send message</button>
     </div>
 
     {/* Newsletter */}
@@ -411,7 +412,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row justify-between gap-10">
           {/* Brand */}
           <div className="flex flex-col">
-           <img src="/jagedob.png" alt="" width={70} />
+           <img src="/jagedologoo.png" alt="" width={70} />
             <p className="mt-2 text-sm max-w-xs">
               Turning In Mind Blueprints into Real Empires. Trusted platform for
               all your construction and professional needs.

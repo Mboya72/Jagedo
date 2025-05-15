@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import logo from "../public/jagedologoo.png";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 // Import SVG icons as image sources
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 h-screen bg-opacity-20 backdrop-blur-[10px] text-white font-medium p-3 transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 z-50 h-screen bg-[#003B63] backdrop-blur-[10px] text-white font-medium p-3 transition-all duration-300 ease-in-out ${
         isOpen ? "w-[200px]" : "w-[60px]"
       }`}
     >
@@ -58,7 +58,7 @@ const Sidebar = () => {
       {/* Toggle Button Positioned at Edge */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute top-12 -right-4 bg-[#E31937] text-black p-1 rounded-full shadow-md z-50"
+        className="absolute top-12 -right-4 bg-[#88DA27] text-black p-1 rounded-full shadow-md z-50"
       >
         {isOpen ? <FiChevronLeft /> : <FiChevronRight />}
       </button>
@@ -73,14 +73,14 @@ const Sidebar = () => {
               <div
                 className={`flex items-center gap-3 w-full py-2 px-2 rounded-full cursor-pointer text-[18px] transition-colors duration-200 ${
                   isActive
-                    ? "text-[#E31937] bg-white/10"
-                    : "text-black hover:text-[#E31937] hover:bg-white/10"
+                    ? "text-[#003B63] bg-[#88DA27]"
+                    : "text-white hover:text-[#E31937] hover:bg-white/10"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
                 <div
                   className={`transition-all duration-200 flex items-center justify-center ${
-                    isActive ? "bg-[#E31937] rounded-full p-1" : ""
+                    isActive ? "bg-[#88DA27] rounded-full " : ""
                   }`}
                 >
                   <Image
