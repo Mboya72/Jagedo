@@ -49,7 +49,7 @@ const FeedPage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
-    <Layout isSidebarOpen={isSidebarOpen}>
+    <Layout>
       <div className="min-h-screen ml-11 bg-[url('/jagedoback2.png')] bg-cover bg-no-repeat p-6 text-white">
         <div className=" p-6  mb-6 text-black">
           <h2 className="text-5xl font-bold mb-4">Feed</h2>
