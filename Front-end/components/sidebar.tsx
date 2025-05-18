@@ -21,17 +21,17 @@ import OrdersIcon from '../assets/icons/orders.svg';
 
 // Sidebar items with icon image, label, and route
 const sidebarItems = [
-  { icon: HomeIcon, label: "Home", route: "/userdashhome" },
-  { icon: FeedIcon, label: "Feed", route: "/userdashfeed" },
-  { icon: BookmarksIcon, label: "Bookmarks", route: "/bookmarks" },
-  { icon: NotificationsIcon, label: "Notifications", route: "/notifications" },
-  { icon: FundiIcon, label: "Fundi", route: "/fundi" },
-  { icon: ProfessionalIcon, label: "Professional", route: "/professional" },
-  { icon: ContractorIcon, label: "Contractor", route: "/contractor" },
+  { icon: HomeIcon, label: "Home", route: "/userhome" },
+  { icon: FeedIcon, label: "Feed", route: "/userfeed" },
+  { icon: BookmarksIcon, label: "Bookmarks", route: "/userbookmarks" },
+  { icon: NotificationsIcon, label: "Notifications", route: "/usernotifications" },
+  { icon: FundiIcon, label: "Fundi", route: "/userfundi" },
+  { icon: ProfessionalIcon, label: "Professional", route: "/userprofessional" },
+  { icon: ContractorIcon, label: "Contractor", route: "/usercontractor" },
   { icon: ShopIcon, label: "Shop", route: "/shop" },
-  { icon: ProjectsIcon, label: "Projects", route: "/projects" },
-  { icon: JobsIcon, label: "Jobs", route: "/jobs" },
-  { icon: OrdersIcon, label: "Orders", route: "/orders" },
+  { icon: ProjectsIcon, label: "Projects", route: "/userprojects" },
+  { icon: JobsIcon, label: "Jobs", route: "/userjobs" },
+  { icon: OrdersIcon, label: "Orders", route: "/userorders" },
 ];
 
 const Sidebar = () => {
